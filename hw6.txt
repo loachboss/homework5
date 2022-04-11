@@ -1,0 +1,29 @@
+String Name = "";
+String male = "";
+String birthday = "";
+String ID = "";
+String check = "";
+
+do{
+    do{
+    Console.WriteLine("請輸入姓名");
+    Name = Console.ReadLine();
+    Console.WriteLine("請輸入性別(男/女)");
+    male = Console.ReadLine();
+    Console.WriteLine("請輸入生日(例20220410)");
+    birthday = Console.ReadLine();
+    Console.WriteLine("請輸入學號");
+    ID = Console.ReadLine();
+
+    Console.WriteLine("請確認是否正確，正確輸入1，錯誤輸入2");
+    Console.WriteLine("姓名：" + Name);
+    Console.WriteLine("性別：" +male);
+    Console.WriteLine("生日：" +birthday);
+    Console.WriteLine("學號：" +ID);
+    check = Console.ReadLine();
+}
+while(check == "2");
+
+Console.WriteLine("已完成資料建置");
+}
+while(check == "1");
